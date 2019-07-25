@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    background-color:#060c21;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.contianer {
+    position: relative;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(260px,1fr));
+    grid-template-rows: auto;
+    grid-gap: 0 40px; */
+ 
+}
+
+.contianer .box {
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 20px;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    /* background: linear-gradient(315deg,#ff0057,#e64a19); */
+    /* background-color: #060c21; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border:1px solid #000; */
+    overflow: hidden;
+}
+.contianer:nth-child(1){
+    background: linear-gradient(315deg,#adda0a,#e64a19);
+}
+.contianer:nth-child(2){
+    background: linear-gradient(315deg,#b418c2,#6be619);
+}
+.contianer:nth-child(3){
+    background: linear-gradient(315deg,#a32c54,#19e6a9);
+}
+.contianer:nth-of-type(4){
+    background: linear-gradient(315deg,#18ca9e,#19a5e6);
+}
+/* .contianer .box::after{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background-color: #fff;
+    transform: skew(2deg,2deg);
+    z-index: -1;
+   
+} */
+.content {
+    position: relative;
+    padding: 20px;
+}
+.content h2 {
+    position: absolute;
+    top: -60px;
+    right: 20px;
+    margin: 0;
+    padding:0;
+    font-size: 10em;
+    color: rgba(255,255,255,0.2);
+    transition: 0.5s;
+}
+
+.box:hover .content h2 {
+    top :-110px;
+}
+
+.content h3 {
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.content p {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+
+}
+.content a {
+    position: relative;
+    margin: 20px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    display: inline-block;
+    color:#fff;
+    transition: 0.5s;
+    transform: translateY(-40px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.box:hover .content a{
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+
+}
+.box .content a:hover {
+    color: #000;
+    background-color: #fff;
+}
